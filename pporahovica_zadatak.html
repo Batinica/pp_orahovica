@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS PPORAHOVICA STRANICA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Syne+Tactile&family=Varela+Round&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            width: 100%;
+            height: 5vh;
+            background-color: white;
+            
+        }
+        .div1 {
+            float: left;
+            display: flex;
+        }
+        .img1 {
+            padding: 20px;
+            
+        }
+        .div2 {
+            float: right;
+        }
+        .ol1 li {
+            text-decoration: none;
+            list-style: none;
+            justify-content: right;
+            align-items: center;
+            display: inline-block;
+            padding: 10px;
+        }
+        li, .a2, .a3, .a4{
+            text-decoration: none;
+            color: black;
+            letter-spacing: 4px;
+            word-spacing: 4px;
+            font-family: 'Varela Round';
+            font-weight: bolder;
+        }
+        
+        .a3:hover {
+            color: blue !important;
+            transition: all linear .2s;
+            border-radius: 0.2rem;
+        }
+        .a4:hover {
+           color: magenta !important;
+           transition: all linear .2s;
+        }
+        .clear {
+            clear: both;
+        }
+        .container {
+            margin: 0px auto;
+            width: 100%;
+            height: 95vh;
+            display: flex;
+        }
+        .column1of2{
+            display: flex;
+            flex-direction: column;
+            place-content: center;
+            place-items: center;
+            width: 50%;
+            height: 100%;
+            background: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.80)), url(image_pp_orahovica/Cover_Zadatak.jpg) center center no-repeat;
+            background-size: cover;
+        }
+        .div_naslov {
+            color: white;
+            font-size: 1.5rem;
+            padding: 10px;
+        }
+        .div_classlist ul li {
+            color: white;
+            font-size: 1.5rem;
+            padding: 12px;
+
+        }
+        .column2of2 {
+            position: relative;
+            height: 95vh;
+            width: 50%;
+            margin-left: 30px;
+            
+        }
+        .div_naslov2 {
+            position: absolute;
+            width: 80%;
+            vertical-align: top;
+            display: flex;
+            flex-direction: column;
+            z-index: 10;
+            top: 1%;
+            left: 5%;
+            margin-top: 10px;
+        }
+        .divform {
+            display: flex;
+            justify-content: space-between;
+        }
+        .div_kontakt {
+            text-transform: uppercase;
+            color: goldenrod;
+            box-shadow: 2px 2px 2px 2px lightgray;
+            padding: 10px;
+            margin-bottom: 20px;
+            
+        }
+        .form, .form2, .form3, .form4 {
+            font-size: 1em;
+            margin-bottom: 10px;
+            font-family: 'Varela Round';
+            box-shadow: 0.5px 0.5px  lightgray;
+        }
+        .inp1 {
+            width: 100%;
+            height: 5vh; 
+            box-shadow: 0.5px 0.5px 20px 5px lightgray;
+        }
+        .form, .form2{
+            width: 47%;
+            padding: 2px;
+        }
+        h2 {
+            margin: 0px;
+            padding: 15px;
+        }
+        .divbotun {
+            display: flex;
+            justify-content: space-between;
+        }
+        .botun1 {
+            background-color: goldenrod;
+            color: white;
+            padding: 20px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            border-radius: 10px;
+            font-family: 'Varela Round';
+        }
+        .link1 {
+            margin-top: 10px;
+            font-size: 1.1em;
+            color: goldenrod;
+            font-family: 'Varela Round';
+        }
+        textarea {
+            box-shadow: 0.5px 0.5px 20px 5px lightgray;
+            font-family: 'Varela Round';
+        }
+       
+        
+        
+        
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="div1">
+            <a class="a1" href="http://test5.fer-plus.com/pporahovica/index.html">
+                <img class="img1" src="image_pp_orahovica/Logo-gold PPORAHOVICA.png" width="220px" height="65px" alt="">
+            </a>
+        </div>
+        <div class="div2">
+            <ol class="ol1">
+                <li class="li1">
+                    <a class="a2" href="https://pporahovica.hr/o-nama/" target="_blank">O NAMA</a>
+                </li>  
+                <li class="li2">
+                    <a class="a3" href="https://www.facebook.com/pporahovica/">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-facebook face" viewBox="0 0 16 16">
+                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                        </svg>
+                    </a>
+                </li>
+                <li class="li3">
+                    <a class="a4" href="https://www.instagram.com/pp____orahovica/">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-instagram inst" viewBox="0 0 16 16">
+                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                        </svg>
+                    </a>
+                </li> 
+            </ol>
+        </div>
+        <div class="clear"></div>
+    </header>
+    <section class="container">
+        <div class="column1of2">
+            
+            <div class="div_naslov">
+                <h1 style="font-family: 'Varela Round';">Objavljujemo totalnu rasprodaju nekorištenih rezervnih dijelova mehanizacije</h1>
+            </div>
+            
+            <div class="div_classlist">
+                <ul>
+                    <li>Ležajevi, semerinzi, vijčana roba, kardani, remenje i filteri</li>
+                    <li>Renomirani proizvođači rezervnih dijelova</li>
+                    <li>Izvrsno stanje</li> 
+                    <li>Povoljna cijena</li>
+                    <li>Dijelovi se mogu pogledati svakim radnim danom 8-14 sati na adresi Pustara 1, 33513 Zdenci</li>
+                </ul>
+            </div>
+        </div>
+        <div class="column2of2">
+            <div class="div_naslov2">
+                <h1 style="font-size: 2.2rem; margin-top: 0px; font-family: 'Varela Round';">TOTALNA RASPRODAJA NEKORIŠTENIH REZERVNIH DIJELOVA MEHANIZACIJE</h1>
+            <div class="div_kontakt">
+                <h2 style="font-size: 2.1rem; font-family: 'Varela Round'; ">nazovite nas na broj 091/436669 ili pošaljite upit:</h2 >
+            </div>
+            <form action="">
+            <div class="divform">
+            <div class="form">
+                <label for="imeiprezime">VAŠE IME I PREZIME</label> 
+                <small>*</small> <br>
+                <input class="inp1" type="text" required placeholder="Unesite Vaše ime">
+            </div>
+            <div class="form2">
+                <label for="brojtelefona">BROJ TELEFONA</label>
+                <small>*</small> <br>
+                <input class="inp1"  type="tel" required placeholder="Unesite broj telefona">
+            </div>
+            </div>
+            <div class="form3">
+                <label for="email">EMAIL ADRESA</label>
+                <small>*</small> <br>
+                <input class="inp1" type="email" required placeholder="Unesite email">
+            </div>
+            <div class="form4">
+                <label for="kontakt">KONTAKTIRAJTE NAS</label> <br>
+                <textarea name="kontakt" id="" cols="81" rows="6">Unesite poruku</textarea>
+            </div>
+            <div>
+                <input style="font-family: 'Varela Round';" type="checkbox">
+                <label style="font-family: 'Varela Round';" for="check">Slažem se</label>
+                <p style="font-family: 'Varela Round';">Korištenjem ovog obrasca prihvaćate prikupljanje i obradu osobnih podataka danih u obrascu bez kojih vaš zahtjev u obrascu ne može biti ispunjen.</p>
+            </div>
+            <div class="divbotun">
+                <button class="botun1" type="submit">POŠALJI UPIT</button>
+                <a class="link1" href="https://pporahovica.hr">Posjeti naš Web</a>
+            </div>
+            </div>
+        </form>
+      
+        </div>
+    </section>
+</body>
+</html>
